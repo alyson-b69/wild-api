@@ -1,0 +1,8 @@
+  host: env('HOST', 'api.wild-dev.com'),
+  port: env.int('PORT', 1337),
+  admin: {
+    auth: {
+      secret: env('ADMIN_JWT_SECRET', '48d39e0d4acbac1b112afc2f07543ecc'),
+    },
+  },
+});
